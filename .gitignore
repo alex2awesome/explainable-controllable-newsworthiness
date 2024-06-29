@@ -40,6 +40,10 @@
 *.ckpt
 *.vrm
 *.mat
+*.html
+*.mp3
+*.mp4
+
 
 
 
