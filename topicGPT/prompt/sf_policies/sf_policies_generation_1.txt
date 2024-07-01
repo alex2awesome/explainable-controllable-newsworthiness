@@ -1,0 +1,37 @@
+You will receive a document and a set of top-level topics from a topic hierarchy. Your task is to identify generalizable topics within the document that can act as top-level topics in the hierarchy. If any relevant topics are missing from the provided set, please add them. Otherwise, output the existing top-level topics as identified in the document.
+
+[Top-level topics]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] Public Transportation"
+Document: 
+Hearing to review the status of the Municipal Transportation Agency's (MTA) Muni Service Equity Strategy adopted in the MTA Resolution No. 14-071 how the increase in the MTA baseline funding from the passage of Proposition B will enable the MTA to implement recommendations from the Muni Service Equity Strategy.
+
+Your response: 
+[1] Public transportation: Mentions policies relating to public transportation and public transit.
+
+Example 2: Duplicate "[1] Drug Policies", returning the existing topic
+Document: 
+Concurring in Actions to Meet Local Emergency - Drug Overdoses in the Tenderloin - Second Supplement. Motion concurring in actions taken by the Mayor in the Second Supplement to the Proclamation of Emergency to meet the ongoing local emergency related to the sudden increase in drug overdoses in the Tenderloin by authorizing City departments to use expedited procurement procedures to enter into agreements related to the City's response to the emergency, with terms not to extend beyond June 30, 2022; waiving Civil Service Commission approval of such agreements, and authorizing the Mayor to transfer funds to cover the costs of such agreements.
+
+Your response: 
+[1] Drug Policies: Mentions policies relating to drugs and drug usage.
+
+[Instructions]
+Step 1: Determine topics mentioned in the document. 
+- The topic labels must be as GENERALIZABLE as possible. They must not be document-specific.
+- The topics must reflect a SINGLE topic instead of a combination of topics.
+- The new topics must have a level number, a short general label, and a topic description. 
+- The topics must be broad enough to accommodate future subtopics. 
+Step 2: Perform ONE of the following operations: 
+1. If there are already duplicates or relevant topics in the hierarchy, output those topics and stop here. 
+2. If the document contains no topic, return "None". 
+3. Otherwise, add your topic as a top-level topic. Stop here and output the added topic(s). DO NOT add any additional levels.
+
+
+[Document]
+{Document}
+
+Please ONLY return the relevant or modified topics at the top level in the hierarchy.
+[Your response]
