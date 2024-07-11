@@ -8,9 +8,14 @@ import random
 from sentence_transformers import SentenceTransformer, util
 import argparse
 import os
+import json
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
+HF_HOME = "/project/jonmay_231/spangher/huggingface_cache"
+config_data = json.load(open('config.json'))
+os.environ['HF_TOKEN'] = config_data["HF_TOKEN"]
+os.environ['HF_HOME'] = HF_HOME
 
 def tree_formatting(topics_root):
     """
