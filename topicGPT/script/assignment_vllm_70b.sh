@@ -9,6 +9,8 @@
 
 module load python/3.11
 pip install -r requirements.txt
+export HF_HOME=/project/jonmay_231/spangher/huggingface_cache
+export VLLM_ENGINE_ITERATION_TIMEOUT_S=180
 python -m vllm.entrypoints.openai.api_server --model NousResearch/Meta-Llama-3-70B-Instruct --dtype auto --api-key token-abc123
 python setup.py --num_samples 2000
 python script/assignment.py --deployment_name gpt-4 \
