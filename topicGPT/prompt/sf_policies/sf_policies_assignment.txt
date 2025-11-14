@@ -1,0 +1,29 @@
+You will receive a document and a topic hierarchy. Assign the document to the most relevant topics the hierarchy. Then, output the topic labels, assignment reasoning and supporting quotes from the document. DO NOT make up new topics or quotes.  
+
+[Topic Hierarchy]
+{tree}
+
+[Examples]
+Example 1: Assign "[1] Public Transportation" to the document
+Document: 
+Hearing - Update on the Municipal Transportation Agency's Muni Service Equity Strategy and the Increase in Baseline Funding from Proposition B. Hearing to review the status of the Municipal Transportation Agency's (MTA) Muni Service Equity Strategy adopted in the MTA Resolution No. 14-071, and how the increase in the MTA baseline funding from the passage of Proposition B will enable the MTA to implement recommendations from the Muni Service Equity Strategy.
+
+Assignment:
+[1] Public Transportation:  Mentions policies relating to public transportation and public transit ("...the Municipal Transportation Agencey's (MTA) Muni Service...")
+
+Example 2: Assigned "[1] Drug Policies" to the document
+Document: 
+Concurring in Actions to Meet Local Emergency - Drug Overdoses in the Tenderloin - Second Supplement. Motion concurring in actions taken by the Mayor in the Second Supplement to the Proclamation of Emergency to meet the ongoing local emergency related to the sudden increase in drug overdoses in the Tenderloin by authorizing City departments to use expedited procurement procedures to enter into agreements related to the City's response to the emergency, with terms not to extend beyond June 30, 2022; waiving Civil Service Commission approval of such agreements, and authorizing the Mayor to transfer funds to cover the costs of such agreements.
+
+Assignment: 
+[1] Drug Policies: Mentions policies relating to drugs and drug usage ("...drug overdoses...")
+
+[Instructions]
+1. Topic labels must be present in the provided topic hierarchy. You MUST NOT make up new topics. 
+2. The quote must be taken from the document. You MUST NOT make up quotes. 
+
+[Document]
+{Document}
+
+Double check that your assignment exists in the hierarchy!
+Your response:

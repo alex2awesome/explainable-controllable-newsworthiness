@@ -1,0 +1,42 @@
+You will receive a branch from a topic hierarchy along with some documents assigned to the top-level topic of that branch. Your task is to identify generalizable second-level topics that can act as subtopics to the top-level topic in the provided branch. Add your topic(s) if they are missing from the provided branch. Otherwise, return the existing relevant or duplicate topics. 
+
+[Example: Return "[2] Public Health Emergency" (new) and "[2] Mental Health" (existing) as the subtopics of "[1] Public Health Policies" (provided).]
+Topic branch:
+[1] Public Health Policies
+    [2] Mental Health
+    [2] Health Care
+
+Document 1: 
+Committee of the Whole - Standing Briefings Related to the COVID-19 Health Emergency Response on Board Tuesdays at 3:00 p.m.. Motion directing the Clerk of the Board of Supervisors to schedule standing Committee of the Whole hearings every Tuesday that the Board of Supervisors has a regular meeting at 3:00 p.m. for the Members of the Board of Supervisors to discuss informational updates related to the COVID-19 Health Emergency Response with relevant City agencies and subject matter experts.
+
+Document 2: 
+Hearing - City Funded Mental Health Services and Spending. Hearing on the mental health services that are funded and implemented by the City and County of San Francisco.
+
+Document 3: 
+Accept and Expend Grant - Retroactive - California Department of State Hospitals - Pre-Trial Felony Mental Health Diversion Program - $2,300,400. Resolution retroactively authorizing the Department of Public Health to accept and expend a grant in the total amount of $2,300,400 from the California Department of State Hospitals to participate in a program, entitled "Pre-Trial Felony Mental Health Diversion," for the three-year budget period of September 15, 2019, through September 14, 2022.
+
+Your response: 
+[1] Public Health Policies
+    [2] Public Health Emergency (Document: 1): Mentions public health emergencies and responses.
+    [2] Mental Health (Document: 2, 3): Mentions mental health policies and mental health programs.
+
+[Instructions]
+Step 1: Determine PRIMARY and GENERALIZABLE topics mentioned in the documents. 
+- The topics must be generalizable among the provided documents. 
+- Each topic must not be too specific so that it can accommodate future subtopics.
+- Each topic must reflect a SINGLE topic instead of a combination of topics.
+- Each top-level topic must have a level number and a short label. Second-level topics should also include the original documents associated with these topics (separated by commas) as well as a short description of the topic.
+- The number of topics proposed cannot exceed the number of documents provided.
+Step 2: Perform ONE of the following operations: 
+1. If the provided top-level topic is specific enough, DO NOT add any subtopics. Return the provided top-level topic.
+2. If your topic is duplicate or relevant to the provided topics, DO NOT add any subtopics. Return the existing relevant topic. 
+3. If your topic is relevant to and more specific than the provided top-level topic, add your topic as a second-level topic. DO NOT add to the first or third level of the hierarchy. 
+
+[Topic branch]
+{Topic}
+
+[Documents]
+{Document}
+ 
+DO NOT add first- or third-level topics.
+[Your response] 
