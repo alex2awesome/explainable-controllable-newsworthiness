@@ -27,6 +27,7 @@ QUIET_FFMPEG = True
 PARTIAL_DOWNLOAD = False
 HEADLESS = True
 
+
 def check_mimetype(file, first_check=True):
     import magic
     magic = magic.Magic()

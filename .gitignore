@@ -1,3 +1,20 @@
+############################################################
+# Project-specific large data and media artifacts
+############################################################
+
+# Raw and processed city-level datasets (12G+) and archives
+/data/
+/data.tar.gz
+
+# Notebook-generated media/cache directories and samples
+/notebooks/cache/
+/notebooks/sample_htmls_to_download/
+/notebooks/*.mp4
+/notebooks/*.mp3
+
+############################################################
+# Generic large/binary data formats (non-code assets)
+############################################################
 *.jsonl
 *.zip
 *.csv

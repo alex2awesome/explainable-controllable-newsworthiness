@@ -12,7 +12,7 @@
 
 sbatch create_one_index_endeavour.sh  \
   --index_name jacksonville_index \
-  --file_to_index \
+  --files_to_index \
     ../data/news_articles/jax-daily-record-articles-sans-html.jsonl \
     ../data/news_articles/florida-times-articles-sans-html.jsonl
 
@@ -87,7 +87,7 @@ sbatch create_one_index_endeavour.sh \
 
 sbatch create_one_index_endeavour.sh \
   --index_name durham_index \
-  --file_to_index \
+  --files_to_index \
     raleigh-news-and-observer-articles-sans-html.jsonl \
     durham-herald-articles-sans-html.jsonl \
   --start_index 0 \
@@ -95,7 +95,7 @@ sbatch create_one_index_endeavour.sh \
 
 sbatch create_one_index_endeavour.sh \
   --index_name durham_index \
-  --file_to_index \
+  --files_to_index \
     raleigh-news-and-observer-articles-sans-html.jsonl \
     durham-herald-articles-sans-html.jsonl \
   --start_index 250_000 \
